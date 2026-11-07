@@ -1,0 +1,40 @@
+What are virtual environments?
+
+A virtual environment is like a private copy of Python for each project. Think of it as:
+    A separate folder for each project
+    Its own Python installation
+    Its own place to install packages
+    Complete isolation from other projects
+Virtual environments are so important that I create a new one for EVERY project. 
+It’s a Python best practice that will save you from many headaches.
+
+
+Understanding packages
+Before we continue, let’s understand what packages are:
+Packages are pre-written code that others have created for us to use. 
+Instead of writing everything from scratch, we can import these packages. 
+For example:
+    requests - for downloading web pages
+    pandas - for working with data
+    openai - for using AI models
+Each package has different versions, and different projects might need different versions.
+
+Create your first virtual environment
+Let’s create one for our python-for-ai project. You have two methods:
+​
+Method 1: VS Code Command Palette (easier)
+Open your project in VS Code
+Press Ctrl/Cmd + Shift + P
+Type “Python: Create Environment”
+Select “Venv”
+Select your Python installation
+VS Code creates and activates everything for you!
+​
+Method 2: Terminal command
+Open the terminal in VS Code (View > Terminal)
+Make sure you’re in your project folder
+Run this command: for Windows
+    python -m venv .venv
+What this does:
+python -m venv - Run Python’s virtual environment module
+.venv - The name of the folder to create (convention is to use “.venv” with a dot)
